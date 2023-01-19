@@ -1,5 +1,6 @@
 package com.vncsferrarini.protobuf;
 
+import com.vncsferrarini.models.BodyStyle;
 import com.vncsferrarini.models.Car;
 import com.vncsferrarini.models.Dealer;
 
@@ -11,11 +12,13 @@ public class MapDemo {
                 .setMake("Nissan")
                 .setModel("GTR R34 V-SPEC")
                 .setYear(1997)
+                .setBodyStyle(BodyStyle.SPORT)
                 .build();
 
         final var supra = Car.newBuilder()
                 .setMake("Toyota")
                 .setModel("Supra")
+                .setBodyStyle(BodyStyle.SPORT)
                 .setYear(1996)
                 .build();
 
