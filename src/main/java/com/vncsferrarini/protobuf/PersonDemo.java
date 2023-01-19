@@ -1,6 +1,6 @@
 package com.vncsferrarini.protobuf;
 
-import com.vncsferrarini.models.person.Person;
+import com.vncsferrarini.models.Person;
 
 import java.io.IOException;
 import java.nio.file.Files;

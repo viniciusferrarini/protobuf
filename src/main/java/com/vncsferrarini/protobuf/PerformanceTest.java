@@ -2,7 +2,7 @@ package com.vncsferrarini.protobuf;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.protobuf.InvalidProtocolBufferException;
-import com.vncsferrarini.models.person.Person;
+import com.vncsferrarini.models.Person;
 import com.vncsferrarini.protobuf.json.JPerson;
 
 import java.io.IOException;
