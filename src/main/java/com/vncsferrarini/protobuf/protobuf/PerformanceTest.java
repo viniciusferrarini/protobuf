@@ -1,6 +1,7 @@
-package com.vncsferrarini.protobuf;
+package com.vncsferrarini.protobuf.protobuf;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.protobuf.Int32Value;
 import com.google.protobuf.InvalidProtocolBufferException;
 import com.vncsferrarini.models.Person;
 import com.vncsferrarini.protobuf.json.JPerson;
@@ -27,7 +28,7 @@ public class PerformanceTest {
             try {
                 final var person = Person.newBuilder()
                         .setName("Vinicius")
-                        .setAge(30)
+                        .setAge(Int32Value.newBuilder().setValue(30).build())
                         .build();
                 final byte[] bytes = person.toByteArray();
                 Person.parseFrom(bytes);

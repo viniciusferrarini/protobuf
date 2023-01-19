@@ -1,5 +1,6 @@
-package com.vncsferrarini.protobuf;
+package com.vncsferrarini.protobuf.protobuf;
 
+import com.google.protobuf.Int32Value;
 import com.vncsferrarini.models.Person;
 
 import java.io.IOException;
@@ -12,7 +13,7 @@ public class PersonDemo {
     public static void main(String[] args) throws IOException {
         final Person person = Person.newBuilder()
                 .setName("Vinicius")
-                .setAge(30)
+                .setAge(Int32Value.newBuilder().setValue(30).build())
                 .build();
 
         final Path path = Paths.get("vinicius.ser");

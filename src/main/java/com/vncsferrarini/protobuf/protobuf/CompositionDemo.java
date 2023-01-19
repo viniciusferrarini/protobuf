@@ -1,5 +1,6 @@
-package com.vncsferrarini.protobuf;
+package com.vncsferrarini.protobuf.protobuf;
 
+import com.google.protobuf.Int32Value;
 import com.vncsferrarini.models.Person;
 import com.vncsferrarini.models.common.Address;
 import com.vncsferrarini.models.common.Car;
@@ -29,7 +30,7 @@ public class CompositionDemo {
 
         final var person = Person.newBuilder()
                 .setName("Vinicius")
-                .setAge(30)
+                .setAge(Int32Value.newBuilder().setValue(30).build())
                 .setAddress(address)
                 .addAllCar(Arrays.asList(gtr, supra))
                 .build();

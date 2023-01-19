@@ -1,4 +1,4 @@
-package com.vncsferrarini.protobuf;
+package com.vncsferrarini.protobuf.protobuf;
 
 import com.vncsferrarini.models.Person;
 
