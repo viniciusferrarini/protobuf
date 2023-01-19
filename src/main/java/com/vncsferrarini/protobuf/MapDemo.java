@@ -1,8 +1,8 @@
 package com.vncsferrarini.protobuf;
 
-import com.vncsferrarini.models.BodyStyle;
-import com.vncsferrarini.models.Car;
 import com.vncsferrarini.models.Dealer;
+import com.vncsferrarini.models.common.BodyStyle;
+import com.vncsferrarini.models.common.Car;
 
 public class MapDemo {
 

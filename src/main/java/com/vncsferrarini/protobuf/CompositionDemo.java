@@ -1,8 +1,8 @@
 package com.vncsferrarini.protobuf;
 
-import com.vncsferrarini.models.Address;
-import com.vncsferrarini.models.Car;
 import com.vncsferrarini.models.Person;
+import com.vncsferrarini.models.common.Address;
+import com.vncsferrarini.models.common.Car;
 
 import java.util.Arrays;
 
